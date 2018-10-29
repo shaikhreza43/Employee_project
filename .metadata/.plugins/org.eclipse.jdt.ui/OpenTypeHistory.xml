@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=employee_project/C:\/Program Files\/Java\/jdk1.8.0_152\/jre\/lib\/rt.jar&lt;java.io(Serializable.class[Serializable" modifiers="1537" timestamp="1519902953087"/>
+<typeInfo handle="=employee_project/C:\/Program Files\/Java\/jdk1.8.0_152\/jre\/lib\/rt.jar&lt;java.util(Scanner.class[Scanner" modifiers="49" timestamp="1519902953087"/>
+<typeInfo handle="=employee_project/F:\/Zeesense\@project\/employee_project\/WebContent\/WEB-INF\/lib\/spring-webmvc-5.0.8.RELEASE.jar&lt;org.springframework.web.servlet(DispatcherServlet.class[DispatcherServlet" modifiers="33" timestamp="1540453534778"/>
+<typeInfo handle="=employee_project/F:\/Zeesense\@project\/employee_project\/WebContent\/WEB-INF\/lib\/spring-orm-5.0.8.RELEASE.jar&lt;org.springframework.orm.hibernate5(LocalSessionFactoryBean.class[LocalSessionFactoryBean" modifiers="33" timestamp="1540453534591"/>
+<typeInfo handle="=employee_project/H:\/apache-tomcat-8.5.31-windows-x64\/apache-tomcat-8.5.31\/lib\/tomcat-dbcp.jar&lt;org.apache.tomcat.dbcp.dbcp2(BasicDataSource.class[BasicDataSource" modifiers="33" timestamp="1524844498000"/>
+</typeInfoHistroy>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>employee_project</display-name>
+	<welcome-file-list>
+		<welcome-file>saveemployee.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>zeesenseMvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/zeesenseMvc-servlet.xml</param-value>
+
+
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>zeesenseMvc</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+
+</web-app>

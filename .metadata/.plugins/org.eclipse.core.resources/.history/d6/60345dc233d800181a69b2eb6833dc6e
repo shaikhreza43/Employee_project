@@ -1,0 +1,5 @@
+package org.zeesense.springmvc.dto;
+
+public class EmployeeDTO {
+
+}
