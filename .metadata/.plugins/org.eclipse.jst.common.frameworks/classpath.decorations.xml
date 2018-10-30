@@ -1,8 +1,0 @@
-<classpath>
-  <container id="employee_project!org.eclipse.jst.j2ee.internal.web.container">
-    <entry id="F:/Zeesense@project/employee_project/WebContent/WEB-INF/lib/spring-webmvc-5.0.8.RELEASE.jar">
-      <source-attachment-path>C:/Program Files/Java/jdk1.8.0_152/src.zip</source-attachment-path>
-      <attribute name="source_encoding">UTF-8</attribute>
-    </entry>
-  </container>
-</classpath>

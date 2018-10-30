@@ -1,5 +1,0 @@
-package org.zeesense.springmvc.dao;
-
-public class EmployeeDAO {
-
-}

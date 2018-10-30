@@ -1,5 +1,0 @@
-package org.zeesense.springmvc.controller;
-
-public class EmployeeController {
-
-}
