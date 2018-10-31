@@ -11,21 +11,19 @@ import org.zeesense.springmvc.service.EmployeeService;
 @Controller
 @RequestMapping("*")
 public class EmployeeController {
-	
+
 	@Autowired
 	private EmployeeService employeeService;
-	
+
 	@PostMapping("/saveemp.do")
-	public ModelAndView saveEmployee(EmployeeDTO employeeDTO)
-	{
-		Integer identifier=employeeService.saveEmployee(employeeDTO);
+	public ModelAndView saveEmployee(EmployeeDTO employeeDTO) {
+		Integer identifier = employeeService.saveEmployee(employeeDTO);
 		System.out.println(employeeDTO);
-		if(identifier!=null)
-		return new ModelAndView("success.jsp");
+		if (identifier != null)
+			return new ModelAndView("success.jsp");
 		else
 			return new ModelAndView("saveemployee.jsp");
-		
+
 	}
-	
 
 }

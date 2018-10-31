@@ -7,10 +7,17 @@
 <title>Enter Your Details</title>
 <style type="text/css">
 body {
-	background:url("https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_960_720.jpg") no-repeat fixed center;
+	background:
+		url("https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_960_720.jpg")
+		no-repeat fixed center;
 	background-repeat: no repeat;
 	background-size: 1366px 768px;
-	color:white;
+	color: white;
+}
+
+a {
+	margin-top: 68%;
+	color: white;
 }
 </style>
 </head>
@@ -80,8 +87,12 @@ body {
 				</tr>
 
 				<tr>
-					<td><input type="submit" value="Submit Details"></td>
+					<td><input type="submit" value="Submit Details"
+						style="margin-left: 55%; margin-top: 12%"></td>
+					<td><a href="loginemp.jsp">Login Here</a></td>
 				</tr>
+
+
 			</table>
 	</center>
 

@@ -13,28 +13,26 @@ public class EmployeeDAO {
 
 	@Autowired
 	private SessionFactory factory;
-	
-	public Integer saveEmployeeDetails(EmployeeDTO dto)
-	{
-		Session session=null;
-		Integer identifier=null;
-		Transaction transaction=null;
+
+	public Integer saveEmployeeDetails(EmployeeDTO dto) {
+		Session session = null;
+		Integer identifier = null;
+		Transaction transaction = null;
 		try {
 			session = factory.openSession();
-			transaction=session.beginTransaction();
+			transaction = session.beginTransaction();
 			identifier = (Integer) session.save(dto);
 			transaction.commit();
 		} catch (HibernateException e) {
+			transaction.rollback();
 			e.printStackTrace();
+		} finally {
+			if (session != null)
+				session.close();
 		}
-		finally {
-			if(session!=null)
-			session.close();
-		}
-		
+
 		return identifier;
-		
+
 	}
-	
-	
+
 }

@@ -10,13 +10,11 @@ public class EmployeeService {
 
 	@Autowired
 	private EmployeeDAO employeeDAO;
-	
-	public Integer saveEmployee(EmployeeDTO dto)
-	{
-		Integer identifier=employeeDAO.saveEmployeeDetails(dto);
+
+	public Integer saveEmployee(EmployeeDTO dto) {
+		Integer identifier = employeeDAO.saveEmployeeDetails(dto);
 		return identifier;
-		
+
 	}
-	
-	
+
 }

@@ -16,29 +16,29 @@ import org.hibernate.annotations.GenericGenerator;
 public class EmployeeDTO implements Serializable {
 	@Id
 	@GenericGenerator(name = "employee", strategy = "assigned")
-	@GeneratedValue(generator="employee")
-	@Column(name="employee_id")
-	int id;
-	@Column(name="employee_name")
-	String name;
-	@Column(name="employee_password")
-	String password;
-	@Column(name="employee_email")
-	String email;
-	@Column(name="employee_location")
-	String location;
-	@Column(name="employee_phone_number")
-	long phoneNumber;
-	@Column(name="employee_dob")
-	String dob;
-	@Column(name="employee_alternate_phone_number")
-	long alternatePhone;
-	@Column(name="employee_alternate_email")
-	String alternateEmail;
-	@Column(name="employee_gender")
-	String gender;
-	@Column(name="employee_age")
-	int age;
+	@GeneratedValue(generator = "employee")
+	@Column(name = "employee_id")
+	private int id;
+	@Column(name = "employee_name")
+	private String name;
+	@Column(name = "employee_password")
+	private String password;
+	@Column(name = "employee_email")
+	private String email;
+	@Column(name = "employee_location")
+	private String location;
+	@Column(name = "employee_phone_number")
+	private long phoneNumber;
+	@Column(name = "employee_dob")
+	private String dob;
+	@Column(name = "employee_alternate_phone_number")
+	private long alternatePhone;
+	@Column(name = "employee_alternate_email")
+	private String alternateEmail;
+	@Column(name = "employee_gender")
+	private String gender;
+	@Column(name = "employee_age")
+	private int age;
 
 	public EmployeeDTO() {
 		System.out.println(this.getClass().getSimpleName());
@@ -138,10 +138,5 @@ public class EmployeeDTO implements Serializable {
 				+ ", location=" + location + ", phoneNumber=" + phoneNumber + ", dob=" + dob + ", alternatePhone="
 				+ alternatePhone + ", alternateEmail=" + alternateEmail + ", gender=" + gender + ", age=" + age + "]";
 	}
-
-
-
-
-
 
 }
