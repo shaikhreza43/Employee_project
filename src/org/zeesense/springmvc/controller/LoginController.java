@@ -1,5 +1,8 @@
 package org.zeesense.springmvc.controller;
 
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -22,13 +25,18 @@ public class LoginController {
 
 	// private LoginDTO loginDTO;
 
-	@PostMapping("/login.do")
-	public ModelAndView fetchEmployeeDetails(@ModelAttribute LoginDTO loginDto) {
+	@PostMapping("/loginemp.do")
+	public ModelAndView fetchEmployeeDetails(@ModelAttribute LoginDTO loginDto,HttpServletRequest request) {
 		System.out.println(loginDto);
 		EmployeeDTO employeeDTO = null;
-
+		ServletContext context=null;
+		
 		employeeDTO = loginService.fetchEmployeeDetails(loginDto.getEmail(), loginDto.getUserName());
 		System.out.println(employeeDTO);
+		
+		context = request.getServletContext();
+		context.setAttribute("id", employeeDTO.getId());
+		
 		if (employeeDTO == null) {
 			return new ModelAndView("error.jsp");
 		}

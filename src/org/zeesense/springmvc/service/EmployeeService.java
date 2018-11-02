@@ -17,4 +17,13 @@ public class EmployeeService {
 
 	}
 
+	public boolean updateEmployeeDetails(EmployeeDTO employeeDTO) {
+		return employeeDAO.updateEmployeeDetails(employeeDTO);
+	}
+
+	public Integer deleteEmployeeDetails(Integer id) {
+
+		return employeeDAO.deleteEmployeeDetails(id);
+	}
+
 }

@@ -21,7 +21,7 @@ body {
 </style>
 </head>
 <body bgcolor="white">
-	<form action="login.do" method="post">
+	<form action="loginemp.do" method="post">
 		<center>
 			<h2>Employee Login Page</h2>
 			<table>
@@ -39,7 +39,8 @@ body {
 				</tr>
 
 				<tr>
-					<td><input type="submit" value="Login" style="margin-left: 75%"></td>
+					<td><input type="submit" value="Login" style="margin-left: 80%"></td>
+					
 				</tr>
 
 
